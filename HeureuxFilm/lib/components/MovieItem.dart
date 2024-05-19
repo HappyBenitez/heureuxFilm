@@ -19,7 +19,12 @@ class MovieItem extends StatelessWidget {
           Expanded(child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
+              children: <Widget>
+            RaisedButton(
+			  child: Text("Happy Benitez"),
+			  onPressed: (){
+			  launch("https://happybenitez.github.io/heureuxFilm/");
+			  }), [
                 Text(
                   this.movie.title,
                   overflow: TextOverflow.ellipsis,
